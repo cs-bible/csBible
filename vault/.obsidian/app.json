@@ -1,0 +1,22 @@
+{
+  "propertiesInDocument": "visible",
+  "rightToLeft": false,
+  "alwaysUpdateLinks": true,
+  "showInlineTitle": true,
+  "showLineNumber": false,
+  "spellcheck": false,
+  "newFileLocation": "current",
+  "newFileFolderPath": "javi's/developer/limbo",
+  "promptDelete": false,
+  "livePreview": true,
+  "attachmentFolderPath": "javi's/zz - meta/zzz - attachments",
+  "showUnsupportedFiles": true,
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "trashOption": "local",
+  "readableLineLength": true
+}

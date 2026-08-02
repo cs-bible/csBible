@@ -1,0 +1,146 @@
+/* =============================================================================
+   XERVE Vault — Colored Sidebar Snippet
+   Inspired by CyanVoxel's Colored Sidebar
+   https://github.com/CyanVoxel/Obsidian-Colored-Sidebar
+   ============================================================================= */
+
+:root {
+  /* ── Palette principal ── */
+  --xerve-developer-color:  #74c0fc;   /* Sky Blue    — developer       */
+  --xerve-personal-color:   #ff8787;   /* Soft Red    — personal        */
+  --xerve-projects-color:   #ffa94d;   /* Amber       — projects        */
+  --xerve-meta-color:       #a9e34b;   /* Lime        — zz - meta       */
+  --xerve-limbo-color:      #ffd43b;   /* Yellow      — zz -limbo       */
+
+  /* ── Sub-palettes developer ── */
+  --xerve-lang-bash-color:  #69db7c;   /* Mint Green  — bash            */
+  --xerve-lang-c-color:     #74c0fc;   /* Sky Blue    — c               */
+  --xerve-lang-cpp-color:   #63b3ed;   /* Cornflower  — cpp             */
+  --xerve-lang-go-color:    #4fc3f7;   /* Cyan        — go              */
+  --xerve-lang-java-color:  #ffa94d;   /* Amber       — java            */
+  --xerve-lang-js-color:    #ffd43b;   /* Yellow      — javascript      */
+  --xerve-lang-py-color:    #4dabf7;   /* Azure       — python          */
+  --xerve-lang-rust-color:  #ff8c69;   /* Salmon      — rust            */
+  --xerve-lang-sql-color:   #da77f2;   /* Orchid      — sql             */
+  --xerve-lang-ts-color:    #63b3ed;   /* Cornflower  — typescript      */
+}
+
+/* ── Estilo base para todos los títulos de carpeta ── */
+.nav-folder-title {
+  font-size: medium;
+  font-weight: 600;
+  margin: 1px 0;
+  padding: 4px 6px 4px 8px;
+}
+
+/* =============================================================================
+   DEVELOPER
+   ============================================================================= */
+
+.nav-folder-title[data-path="developer"],
+.nav-folder-title[data-path^="developer/"] {
+  color: var(--xerve-developer-color);
+}
+
+/* Subcarpetas de concepts y devops y tools heredan el azul base */
+.nav-folder-title[data-path="developer/concepts"],
+.nav-folder-title[data-path^="developer/concepts/"],
+.nav-folder-title[data-path="developer/devops"],
+.nav-folder-title[data-path^="developer/devops/"],
+.nav-folder-title[data-path="developer/tools"],
+.nav-folder-title[data-path^="developer/tools/"] {
+  color: var(--xerve-developer-color);
+  opacity: 0.85;
+}
+
+/* ── Lenguajes individuales ── */
+.nav-folder-title[data-path="developer/languages"],
+.nav-folder-title[data-path^="developer/languages/"] {
+  color: var(--xerve-developer-color);
+}
+
+.nav-folder-title[data-path="developer/languages/bash"],
+.nav-folder-title[data-path^="developer/languages/bash/"] {
+  color: var(--xerve-lang-bash-color);
+}
+
+.nav-folder-title[data-path="developer/languages/c"],
+.nav-folder-title[data-path^="developer/languages/c/"] {
+  color: var(--xerve-lang-c-color);
+}
+
+.nav-folder-title[data-path="developer/languages/cpp"],
+.nav-folder-title[data-path^="developer/languages/cpp/"] {
+  color: var(--xerve-lang-cpp-color);
+}
+
+.nav-folder-title[data-path="developer/languages/go"],
+.nav-folder-title[data-path^="developer/languages/go/"] {
+  color: var(--xerve-lang-go-color);
+}
+
+.nav-folder-title[data-path="developer/languages/java"],
+.nav-folder-title[data-path^="developer/languages/java/"] {
+  color: var(--xerve-lang-java-color);
+}
+
+.nav-folder-title[data-path="developer/languages/javascript"],
+.nav-folder-title[data-path^="developer/languages/javascript/"] {
+  color: var(--xerve-lang-js-color);
+}
+
+.nav-folder-title[data-path="developer/languages/python"],
+.nav-folder-title[data-path^="developer/languages/python/"] {
+  color: var(--xerve-lang-py-color);
+}
+
+.nav-folder-title[data-path="developer/languages/rust"],
+.nav-folder-title[data-path^="developer/languages/rust/"] {
+  color: var(--xerve-lang-rust-color);
+}
+
+.nav-folder-title[data-path="developer/languages/sql"],
+.nav-folder-title[data-path^="developer/languages/sql/"] {
+  color: var(--xerve-lang-sql-color);
+}
+
+.nav-folder-title[data-path="developer/languages/typescript"],
+.nav-folder-title[data-path^="developer/languages/typescript/"] {
+  color: var(--xerve-lang-ts-color);
+}
+
+/* =============================================================================
+   PERSONAL
+   ============================================================================= */
+
+.nav-folder-title[data-path="personal"],
+.nav-folder-title[data-path^="personal/"] {
+  color: var(--xerve-personal-color);
+}
+
+/* =============================================================================
+   PROJECTS
+   ============================================================================= */
+
+.nav-folder-title[data-path="projects"],
+.nav-folder-title[data-path^="projects/"] {
+  color: var(--xerve-projects-color);
+}
+
+/* =============================================================================
+   ZZ - META
+   ============================================================================= */
+
+.nav-folder-title[data-path="zz - meta"],
+.nav-folder-title[data-path^="zz - meta/"] {
+  color: var(--xerve-meta-color);
+}
+
+/* =============================================================================
+   ZZ - LIMBO
+   ============================================================================= */
+
+.nav-folder-title[data-path="zz -limbo"],
+.nav-folder-title[data-path^="zz -limbo/"] {
+  color: var(--xerve-limbo-color);
+}

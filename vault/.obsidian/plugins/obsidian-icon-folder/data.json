@@ -1,0 +1,512 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [],
+    "recentlyUsedIconsSize": 5,
+    "rules": [
+      {
+        "rule": "^computer-science$",
+        "icon": "LiBrainCircuit",
+        "for": "folders",
+        "useFilePath": true
+      },
+      {
+        "rule": "computer-science/algorithms",
+        "icon": "LiGitGraph",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "computer-science/compilers",
+        "icon": "DeLlvmOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "computer-science/computer-architecture",
+        "icon": "LiCpu",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "computer-science/concurrency",
+        "icon": "LiWorkflow",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "computer-science/cryptography",
+        "icon": "LiKeyRound",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "computer-science/databases",
+        "icon": "LiDatabase",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "computer-science/data-structures",
+        "icon": "LiBlocks",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "computer-science/error-handling",
+        "icon": "LiBug",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "computer-science/networking",
+        "icon": "LiNetwork",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "computer-science/operating-systems",
+        "icon": "LiMonitorCog",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "computer-science/programming",
+        "icon": "LiCode2",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "computer-science/theory",
+        "icon": "LiBookOpen",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "^devops$",
+        "icon": "LiWorkflow",
+        "for": "folders",
+        "useFilePath": true
+      },
+      {
+        "rule": "devops/aws",
+        "icon": "DeAmazonwebservicesOriginalWordmark",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "devops/ci-cd",
+        "icon": "DeGithubactionsOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "devops/cloudflare",
+        "icon": "DeCloudflareOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "devops/docker",
+        "icon": "DeDockerOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "devops/git",
+        "icon": "DeGitOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "devops/github",
+        "icon": "DeGithubOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "devops/kubernetes",
+        "icon": "DeKubernetesOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "devops/linux",
+        "icon": "DeLinuxOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "devops/monitoring",
+        "icon": "DeGrafanaOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "devops/networking",
+        "icon": "LiNetwork",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "devops/nginx",
+        "icon": "DeNginxOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "devops/terraform",
+        "icon": "DeTerraformOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "devops/virtualization",
+        "icon": "LiMonitor",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "^frameworks$",
+        "icon": "LiBoxes",
+        "for": "folders",
+        "useFilePath": true
+      },
+      {
+        "rule": "frameworks/express",
+        "icon": "DeExpressOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "frameworks/nextjs",
+        "icon": "DeNextjsOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "frameworks/react",
+        "icon": "DeReactOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "frameworks/spring",
+        "icon": "DeSpringOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "^languages$",
+        "icon": "DeStackoverflowOriginal",
+        "for": "folders",
+        "useFilePath": true
+      },
+      {
+        "rule": "languages/bash",
+        "icon": "SiGnubash",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "languages/c",
+        "icon": "DeCOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "languages/cpp",
+        "icon": "DeCplusplusOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "languages/go",
+        "icon": "DeGoOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "languages/java",
+        "icon": "DeJavaOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "languages/js",
+        "icon": "DeJavascriptOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "languages/postgresSQL",
+        "icon": "DePostgresqlOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "languages/python",
+        "icon": "DePythonOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "languages/python/exercises",
+        "icon": "LiNotebookPen",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "languages/python/pyspark",
+        "icon": "DeApachesparkOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "languages/rust",
+        "icon": "DeRustOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "languages/sql",
+        "icon": "DeMysqlOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "languages/sql/DDL",
+        "icon": "LiTableProperties",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "languages/sql/DML",
+        "icon": "LiTable2",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "languages/TSQL",
+        "icon": "DeMicrosoftsqlserverOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "languages/typescript",
+        "icon": "DeTypescriptOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "^projects$",
+        "icon": "LiFolderGit2",
+        "for": "folders",
+        "useFilePath": true
+      },
+      {
+        "rule": "projects/42",
+        "icon": "De42",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "projects/Asgard",
+        "icon": "LiSwords",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "projects/MVP",
+        "icon": "LiRocket",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "projects/Reloj",
+        "icon": "LiClock3",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "^recipes$",
+        "icon": "LiBookMarked",
+        "for": "folders",
+        "useFilePath": true
+      },
+      {
+        "rule": "recipes/databases",
+        "icon": "LiDatabase",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "recipes/deployment",
+        "icon": "LiRocket",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "recipes/docker",
+        "icon": "DeDockerOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "recipes/git",
+        "icon": "DeGitOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "recipes/linux",
+        "icon": "DeLinuxOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "recipes/networking",
+        "icon": "LiNetwork",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "^software-engineering$",
+        "icon": "LiBlocks",
+        "for": "folders",
+        "useFilePath": true
+      },
+      {
+        "rule": "software-engineering/architecture",
+        "icon": "SiBlueprint",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "software-engineering/clean-code",
+        "icon": "LiSparkles",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "software-engineering/debugging",
+        "icon": "LiBug",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "software-engineering/design-patterns",
+        "icon": "LiRuler",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "software-engineering/documentation",
+        "icon": "LiFileText",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "software-engineering/paradigms",
+        "icon": "LiWaypoints",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "software-engineering/project-management",
+        "icon": "DeJiraOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "software-engineering/requirements",
+        "icon": "LiClipboardCheck",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "software-engineering/solid",
+        "icon": "LiBuilding2",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "software-engineering/testing",
+        "icon": "DeJunitOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "software-engineering/versioning",
+        "icon": "DeGitOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "^tools$",
+        "icon": "LiWrench",
+        "for": "folders",
+        "useFilePath": true
+      },
+      {
+        "rule": "tools/aws-cli",
+        "icon": "DeAmazonwebservicesPlainWordmark",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "tools/neovim",
+        "icon": "DeNeovimPlain",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "tools/obsidian",
+        "icon": "SiObsidian",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "tools/postman",
+        "icon": "DePostmanOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "tools/vscode",
+        "icon": "DeVscodeOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "tools/zed",
+        "icon": "SiZedindustries",
+        "for": "everything",
+        "useFilePath": true
+      }
+    ],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": true,
+    "iconInTitleEnabled": true,
+    "iconInTitlePosition": "inline",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false,
+    "useInternalPlugins": true
+  }
+}

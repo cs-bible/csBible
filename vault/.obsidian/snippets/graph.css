@@ -1,0 +1,25 @@
+
+:root {
+    --graph-bg-image-url: url("https://i.imgur.com/OI98HXs.png");
+}
+
+.workspace-leaf-content[data-type="graph"] .view-content {
+    position: relative;
+    z-index: 0;
+}
+
+.workspace-leaf-content[data-type="graph"] .view-content::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: var(--graph-bg-image-url);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 30%;
+    opacity: var(--graph-bg-opacity, 0.5);
+    filter: brightness(var(--graph-bg-brightness, 0.7)) blur(var(--graph-bg-blur, 1px));
+    left: 0;
+    top: 0;
+    z-index: -1;
+}

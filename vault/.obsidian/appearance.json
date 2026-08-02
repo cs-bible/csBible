@@ -1,0 +1,22 @@
+{
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "time-garden-misc-styles",
+    "time-garden-monthly-note-themes",
+    "time-garden-quarterly-note-themes",
+    "time-garden-yearly-note-themes",
+    "time-garden-weekly-note-themes",
+    "time-garden-tweaks",
+    "time-garden-colored-sidebar",
+    "time-garden-hide-visible-frontmatter",
+    "time-garden-hide-source-frontmatter",
+    "Notebook Backgrounds",
+    "time-garden-daily-note-themes",
+    "CyanVoxel's General Tweaks",
+    "time-garden-hide-inline-title",
+    "no-active-line"
+  ],
+  "baseFontSize": 17,
+  "cssTheme": "iA Writer",
+  "accentColor": ""
+}

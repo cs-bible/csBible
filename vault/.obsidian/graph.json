@@ -1,0 +1,72 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": true,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:\"journaling/01 Daily\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 12320680
+      }
+    },
+    {
+      "query": "path:\"journaling/02 Weekly\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 1561533
+      }
+    },
+    {
+      "query": "path:\"journaling/03 Monthly\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 49151
+      }
+    },
+    {
+      "query": "path:\"journaling/04 Quarterly\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 2303
+      }
+    },
+    {
+      "query": "path:\"journaling/05 Yearly\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 11403519
+      }
+    },
+    {
+      "query": "path:javi's/developer  ",
+      "color": {
+        "a": 1,
+        "rgb": 16711680
+      }
+    },
+    {
+      "query": "path:javi's/personal  ",
+      "color": {
+        "a": 1,
+        "rgb": 7930075
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.330449826989619,
+  "repelStrength": 20,
+  "linkStrength": 1,
+  "linkDistance": 473,
+  "scale": 0.017578125,
+  "close": true
+}
