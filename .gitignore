@@ -1,14 +1,9 @@
-vault/projects/
-
 vault/.obsidian/workspace.json
 vault/.obsidian/workspaces.json
 vault/.obsidian/workspace-mobile.json
 vault/.obsidian/cache/
-vault/.obsidian/.trash/
+vault/.trash/
 
-vault/.obsidian/plugins/linear/
-vault/.obsidian/plugins/spotify-control/
-vault/.obsidian/plugins/hearth/
 
 build/
 dist/
