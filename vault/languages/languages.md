@@ -1,6 +1,0 @@
----
-cssclasses:
-  - centerImages
-  - " centerTitles"
-  - " roundedImages"
----
