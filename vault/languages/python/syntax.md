@@ -1,11 +1,5 @@
----
-cssclasses:
-  - centerImages
-  - " centerTitles"
-  - " roundedImages"
----
 # Type declaration
-[[python - README|Python]] is a dynamically typed, non-declarative language, this means that you do not manually define types; they are determined by the value assigned to the variable.
+[[languages/python/README|Python]] is a dynamically typed, non-declarative language, this means that you do not manually define types; they are determined by the value assigned to the variable.
 
 For example:
 
@@ -15,7 +9,7 @@ age = 10               # Type: int (10)
 knows_python = False   # Type: bool (False)
 ```
 # Code structures
-[[python - README|Python]] uses an indentation rule for structures, rather than symbols like [[languages/java/01 - Index|Java’s]]   braces`{}`.
+[[languages/python/README|Python]] uses an indentation rule for structures, rather than symbols like [[languages/java/README|Java’s]]   braces`{}`.
 There are no semicolons in Python.
 
 <mark style="background: #FF5582A6;">INDENTATION IS MANDATORY, THIS IS THE WAY PYTHON KNOWS HOW TO RUN YOUR CODE PROPERLY </mark>
@@ -36,7 +30,7 @@ hello_world()
 > No semicolons are needed at the end of the line.
 # :DePythonOriginal: Python casting
 
-In [[python - README|Python]] the variables can be converted to other types, and the way of doing this is pretty simple.
+In [[languages/python/README|Python]] the variables can be converted to other types, and the way of doing this is pretty simple.
 See [[casting]] for more context about this concept.
 ## Explicit casting
 

@@ -10,7 +10,7 @@ cssclasses:
 ---
 # :DePythonOriginal: lists in Python
 ## :DePythonOriginal: What is a list?
-Lists are a data structure used to store multiple values in memory. Lists in [[python - README|Python]] have specific characteristics.
+Lists are a data structure used to store multiple values in memory. Lists in [[languages/python/README|Python]] have specific characteristics.
 - Ordered
 - Mutable
 - Allow duplicated elements
@@ -23,7 +23,7 @@ mixed = [1, "Hello", True]
 ```
 
 ## :DePythonOriginal: List creation
-In [[python - README|Python]] you can create lists in different ways.
+In [[languages/python/README|Python]] you can create lists in different ways.
 - Empty list
 - list with elements
 - casting with `list()`
