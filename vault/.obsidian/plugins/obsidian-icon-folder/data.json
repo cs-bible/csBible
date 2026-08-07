@@ -215,14 +215,14 @@
         "useFilePath": true
       },
       {
-        "rule": "languages/c",
-        "icon": "DeCOriginal",
+        "rule": "languages/cpp",
+        "icon": "DeCplusplusOriginal",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "languages/cpp",
-        "icon": "DeCplusplusOriginal",
+        "rule": "languages/c",
+        "icon": "DeCOriginal",
         "for": "everything",
         "useFilePath": true
       },
@@ -510,6 +510,5 @@
     "lucideIconPackType": "native",
     "debugMode": false,
     "useInternalPlugins": true
-  },
-  "languages/cpp": "SiCplusplus"
+  }
 }
