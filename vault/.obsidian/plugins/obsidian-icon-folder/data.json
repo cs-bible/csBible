@@ -233,14 +233,14 @@
         "useFilePath": true
       },
       {
-        "rule": "languages/java",
-        "icon": "DeJavaOriginal",
+        "rule": "languages/javascript",
+        "icon": "DeJavascriptOriginal",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "languages/js",
-        "icon": "DeJavascriptOriginal",
+        "rule": "languages/java",
+        "icon": "DeJavaOriginal",
         "for": "everything",
         "useFilePath": true
       },

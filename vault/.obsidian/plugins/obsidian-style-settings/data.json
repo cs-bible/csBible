@@ -5,12 +5,10 @@
   "modular-css-layout-wv@@narrow-max-width": "1000px",
   "minimal-style@@h1-l": true,
   "catppuccin-pdf@@ctp-pdf-darken": true,
-  "obsidian-transparent@@set-blur": 10,
   "obsidian-transparent@@bg-type": "bg-type-custom",
-  "obsidian-transparent@@animate-modal-open": false,
+  "obsidian-transparent@@animate-modal-open": true,
   "obsidian-transparent@@show-scrollbars": true,
   "obsidian-transparent@@accent-everywhere": false,
-  "obsidian-transparent@@bg-tint-opacity": 0,
   "obsidian-transparent@@border-opacity": 1,
   "shiba-theme-settings@@translucent-pane-style-settings": "shib-translucent-setting-panel",
   "shiba-theme-settings@@shib-transparent-setting-panel": false,
@@ -37,5 +35,9 @@
   "Appearance-dark@@background-underlying-CSS-blend-mode-dark": "none",
   "Appearance-dark@@color-activated-tab-header-dark": "#FFFFFF",
   "Appearance-dark@@color-to-tab-icon-dark": true,
-  "Appearance-dark@@Active-states-file-explorer-select-dark": "activated-file-default-dark"
+  "Appearance-dark@@Active-states-file-explorer-select-dark": "activated-file-default-dark",
+  "obsidian-transparent@@bg-tint-opacity": 0,
+  "obsidian-transparent@@animate-note-open": true,
+  "obsidian-transparent@@no-animation": false,
+  "obsidian-transparent@@set-blur": 80
 }

@@ -14,23 +14,23 @@ This folder contains a vast amount of knowledge, and you will have to struggle t
 # Content
 
 ## Shell 
-- [[bash|Bash]]
+- [[languages/bash/README|Bash]]
 ## Systems Programming
-- [[c - README|C]]
-- [[cpp - README|C++]]
-- [[rust - README|Rust]]
+- [[languages/c/README|C]]
+- [[languages/cpp/README|C++]]
+- [[languages/rust/README|Rust]]
 - - - 
 ## Backend Development
-- [[go - README|Go]]
-- [[java - README|Java]]
+- [[languages/go/README|Go]]
+- [[languages/java/README|Java]]
 - [[python - README|Python]]
 - - - 
 
 ## Web Development
-- [[js - README|JavaScript]]
-- [[typescript - README|TypeScript]]
+- [[languages/javascript/README|JavaScript]]
+- [[languages/typescript/README|TypeScript]]
 - - - 
 ## Databases
-- [[sql - README|SQL]]
-- [[TSQL - README|Transact-SQL (T-SQL)]]
-- [[postgresSQL - README|PostgreSQL]]
+- [[languages/sql/README|SQL]]
+- [[languages/TSQL/README|Transact-SQL (T-SQL)]]
+- [[languages/postgresSQL/README|README]]
