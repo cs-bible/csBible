@@ -23,6 +23,6 @@ System.out.println (sb.toString ()); // prints the object as a string
 ```
 
 ## Related Topics
-- [[primitiveTypes|String vs primitive types]]
+- [[dataTypes|String vs primitive types]]
 - [[wrappers|Wrapper classes]]
 - [[constants|String constants]]

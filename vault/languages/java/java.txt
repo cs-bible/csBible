@@ -1,0 +1,1061 @@
+---
+tags:
+  - java
+  - reservedWord
+cssclasses:
+  - centerImages
+  - " roundedImages"
+  - " centerTitles"
+---
+# Java - Access modifiers :DeJavaOriginal:
+Access modifiers in Java control attributes’s and method’s visibility inside a Class.
+
+There are for main levels
+`public`: Accessible from every class in every package
+`protected`: Accessible inside the same package and [[inheritance|Subclasses]]
+`private` : Only accessible within the same class
+`default` ( no modifier ) : Only accessible within the same package
+
+## Related Topics
+- [[OOP|Object-Oriented Programming]] — encapsulation pillar
+- [[objects|Classes and Objects]]
+- [[inheritance|Inheritance and protected members]]---
+tags:
+  - java
+cssclasses:
+  - centerImages
+  - " roundedImages"
+  - " centerTitles"
+---
+# :DeJavaOriginal:  Args
+
+When we create a main method it always has this structure
+
+```java title="Main"
+public static void main(String[] args){
+	(Instructions);
+}
+```
+
+`String[] args` is an [[arrays|array]] of strings that insert parameters into the main method
+Those parameters could be for example commands on the system cli, or parameters needed by the main method, and we can work with them using the methods associated to the arrays
+
+```java title="argsExecution"
+package example_args;
+
+public class Example {
+	public static void main(String[] args) {
+		if(args.length < 2) {
+			System.out.println("[Example] - FATAL: 2 or more args were expected");
+		System.exit(-3);
+		}else {
+			String name = args[0];
+			String greeting = args[1];
+			System.out.println(greeting + " " + name);
+			System.out.println("[Example] - Program executed correctly");
+			System.exit(0);
+		}
+}
+}
+```
+
+# Running with args
+args : Javi , “Hello there”
+
+```batch prompt=cmd title="cmdExecution_withEnviromentalVariables" group="bash"
+cd Exercises\2nd Quarter\example_args\bin
+java example_args.Example Jhon "Hello there"
+```
+```bash group="bash"  prompt="zsh" path="~/xerve/example_args"
+java -cp bin example_args.Example Javi "Hello there"
+```
+
+---
+cssclasses:
+  - centerImages
+  - " roundedImages"
+  - " centerTitles"
+---
+---
+tags:
+  - java
+cssclasses:
+  - centerImages
+  - " roundedImages"
+  - " centerTitles"
+---
+# Classes and packages in Java  :DeJavaOriginal: 
+## Classes
+Minimum organization unit in Java 
+## Packages
+A package is a group of classes Java must have minimum 1 package with 1 class in order to work
+## Structure
+```java title="javaBasicStructure"
+package example;  // Mandatory statement
+public class Example{
+	// executes automatically when a class is instanced (AT LEAST 1 MANDATORY)
+	public static void main (String[] args){
+		System.out.println ("Hello world");
+	}
+}
+```
+ 
+![[javaCodeStructure.png]]
+
+> [!attention] Important
+> MainClass MUST HAVE a main method (public static void main(String[] args))
+
+## Related Topics
+- [[objects|Objects and Classes]]
+- [[args|Args in main method]]
+- [[OOP|Object-Oriented Programming]]
+---
+tags:
+  - java
+  - oop
+  - advanced
+cssclasses:
+  - centerImages
+  - " roundedImages"
+  - " centerTitles"
+---
+#  Constructors :DeJavaOriginal: :LiConstruction:
+
+Constructors are special methods that initialize objects creating them with the `new` reserved statement.
+<mark style="background: #ABF7F7A6;">They allways have the same name of the Class and dont return anything</mark>
+## Main characteristics
+- They can have instructions
+- Invoked with `new` 
+- Without a constructor, Java automatically creates one without parameters
+
+## Types
+```java title="types"
+class Dog {     
+	Dog() { // Default (no parameters)  
+		instructions 
+	} 
+	Dog(String name){ // With parameters
+		instructions
+	} 
+	Dog(String name, int age){ // Overload
+		instructions
+	} 
+}
+```
+
+## Overload
+Constructors with the same name, different parameters.
+
+```java title="overloadTypes"
+class Dog {     
+	Dog(String name){ // With parameter name
+		instructions
+	} 
+	Dog(String name, int age){ // Overload (parameters name & age)
+		instructions
+	}
+	Dog(int age, String name){ // Overload (parameters order changed)
+		instructions
+	}
+	Dog(String name, float age){ // Overload (parameters type changed)
+		instructions
+	}
+	Dog(String name, int age, String breed){ // Overload (+ breed)
+		instructions
+	}
+}
+```
+
+## Using this
+`this(...)` is used to call another constructor of the same class.
+It helps reuse code and avoid repeating instructions.
+It must be the first line inside the constructor.
+
+```java title="this"
+Dog(String name) { // Receives only name
+    this(name, 0); // Calls constructor with name and age, age = 0 by default
+}
+
+Dog(String name, int age) { // Main constructor
+    this.name = name;
+    this.age = age;
+}
+
+Dog(int age, String name) { // Same parameters, different order
+    this(name, age); // Reuses the main constructor
+}
+
+Dog(String name, float age) { // Age with different type
+    this(name, (int) age); // Converts float to int and reuses constructor
+}
+
+Dog(String name, int age, String breed) { // Adds breed
+    this(name, age); // Reuses constructor with name and age
+    this.breed = breed;
+}
+```
+
+## Related Topics
+- [[objects|Introduction to objects]]
+- [[inheritance#Overload|Constructor overload]]
+- [[methods|Métodos en Java]]---
+tags:
+  - java
+  - basics
+  - dataTypes
+cssclasses:
+  - centerImages
+  - " roundedImages"
+  - " centerTitles"
+---
+
+#  Java primitive types :DeJavaOriginal:
+
+
+
+These types can be converted to another with [[casting]]
+
+````java title="dataTypes"
+byte name = 0; // 8bit integer
+short name = 0; // 16bit integer 
+int name= 0; // 32bit integer
+long name = 0; // 64bit integer
+float name = 0F; // 32bit decimal number
+double name = 0; // 64bit decimal number (more precise than float)
+boolean name = false; // logical value (True or False)
+char name = 'a'; // 16 bits unicode char
+````
+
+## Related Topics
+- [[casting|Casting]]
+- [[wrappers|Wrapper classes]]
+- [[constants|Constants declaration]]---
+cssclasses:
+  - centerImages
+  - " roundedImages"
+  - " centerTitles"
+---
+
+#  java.io :DeJavaOriginal: 
+The java.io package of [[javi's/developer/languages/java/01 - Index|Java]] has several classes to support file work, depending on:
+- Type of content
+- File access mode
+
+## By type of content
+* * *
+> [!note] Files with characters (text)
+> They are accessible from any editor that offers the operating system, have exclusively characters
+
+> [!note] Binary records (bytes)
+> These are those files that do not contain characters, but bytes, can only be opened by specific programs, which know how to decode those bytes.
+
+##  According to access mode
+* * *
+> [!note] Sequential records
+> The information is stored as a continuous chain of bytes, so to access 1 you must access all those prior to that
+
+> [!note] Alegible records
+> You can access a specific file position directly without having to go through previous data, for example using Arrays is a random access mode
+
+# File class (java.io)
+* * *
+Regardless of the file type, Java defines a class within the package that java.io represents a file or directory within a file system
+
+
+# # Jfilechooser
+It is a class like Scanner works with different methods, consult them here:
+https://docs.oracle.com/javase/8/docs/api/javax/swing/JFileChooser.html
+```java title="JFileChooser example"
+private File openFile(){ 
+	JFileChooser chooser = new JFileChooser();
+	chooser.setMultiSelectionEnabled(false);
+	File file = null;
+	int selection = chooser.showOpenDialog(null);
+	try {
+		if(selection == JFileChooser.APPROVE_OPTION){
+			file = chooser.getSelectedFile();
+		}
+	}catch(HeadlessException e){
+		return null;
+	}
+	
+	return file;
+}
+```
+
+```java title="explanation Part 1"
+private File openFile(){ // Method that returns a file
+        JFileChooser chooser = new JFileChooser(); // chooser declaration.
+	(Instructions);
+	return File (variable)
+```
+
+```java title="explanation Part 2"
+chooser.setMultiSelectionEnabled(false); //Toggles multiselection off
+	File file = null; //file variable initialized to null
+	int selection = chooser.showOpenDialog(null); // shows window and assings the exit code of the method to selection variable
+```
+
+```java title="explanation Part 3"
+try {
+	if(selection == JFileChooser.APPROVE_OPTION){ // accept button is clicked
+		fichero = chooser.getSelectedFile(); //file = file choosed.
+	}
+	}catch(HeadlessException e){ 
+		return null;
+}
+```
+
+---
+tags:
+  - java
+  - oop
+  - advanced
+cssclasses:
+  - centerImages
+  - " roundedImages"
+  - " centerTitles"
+---
+
+
+# Inheritance - Java :DeJavaOriginal: 
+Inheritance occurs when a class is an abstraction of another, sharing attributes, but also having some exclusive ones.
+
+> [!summary] 
+> Allow definition of subclasses from a superclass (abstraction)
+> 
+> Subclasses inherit attributes and methods from the superclass
+> 
+> Allow creation of Hierarchy’s and relations between classes
+
+
+<mark style="background: #FF5582A6;">TO REFERENCE AN ELEMENT THAT IS DEFINED IN BOTH CLASSES YOU HAVE TO USE THE KEYWORD</mark> `super` <mark style="background: #FF5582A6;">TO USE THE SUPERCLASS ELEMENT </mark>
+
+
+![[inheritance.png|286]]
+<div class="page-break" style="page-break-before: always;"></div>
+
+```java title="inheritanceSuperclass"
+public class Animal {
+    protected String name;
+    
+    public Animal(String name) {
+        this.name = name;
+    }
+    
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+```
+
+```java title="inheritanceSubclass"
+public class Dog extends Animal {
+    private String race;
+    
+    public Perro(String name, String race) {
+        super(name);  // superclass constructor
+        this.race = race;
+    }
+    
+    public void hacerSonido() {
+        System.out.println(name + " woofs");
+    }
+}
+
+Perro milu = new Perro("Milu", "Border Collie");
+milu.hacerSonido();  // milu woofs
+```
+
+<div class="page-break" style="page-break-before: always;"></div>
+
+[[polymorphism]]
+
+
+
+---
+tags:
+  - java
+  - sockets
+  - advanced
+  - streams
+cssclasses:
+  - centerImages
+  - " roundedImages"
+  - " centerTitles"
+---
+A client and a server often communicate through handlers `InputStream` and `OutputStream` 
+The client writes in the `OutputStream` associated to the `socket` and the server reads them from the `InputStream`
+The server may as well read write in the `OutputStream` and read from the `InputStream`
+
+![[ioStreams.png]]
+
+---
+cssclasses:
+  - centerImages
+  - " roundedImages"
+  - " centerTitles"
+---
+#  Junit :DeJavaOriginal::LiTestTube:
+
+
+JUnit is a framework for automatization of unitary tests, it works with annotations (made with @)
+## JUnit 5 anottations
+
+### @Test
+States a testing method
+```Java title="@Test"
+@Test
+void sumTest(){
+assertEquals(8,calculator.add(5,3)); // Compares value expected vs obtained
+} 
+```
+
+### @Before/AfterEach
+Marks test instructions, can set pre-test (BeforeEach) or post-test (Aftereach) instructions
+
+```java cpp title:JUnit_Before/AfterEach
+int counter = 0;
+@BeforeEach
+void before(){
+	counter++;
+	System.out.println("Start of test" + counter+1);
+	calculator = new Calculator();
+}
+
+@After
+void after(){
+	System.out.println("End of test" + counter+1);
+}
+```
+
+## Directivas junit 5
+### @Before/After All
+Set instructions for the tests, can be BeforeAll or AfterAll the test (in a single unit)
+
+```java cpp title:Before/AfterAll
+@BeforeAll
+void start{
+	System.out.println("Start of the unitary tests with JUnit5")
+}
+
+@AfterAll
+void finish{
+	System.out.println("End of the unitary tests with JUnit5")
+}
+```
+
+# Assertions
+An assertion is the comparison between a value we expected of the test, and the value we get after doing it.
+Can also be a sentence that checks if the code does a specific thing, like throwing an exception.
+## Most common assertions in JUnit5
+### assertEquals(expectedValue, realValue)
+
+We check if both values are Equal (TRUE IF THEY ARE | FALSE IF NOT)
+```java title="assertEquals()"
+assertEquals(8, 5 + 3); // TRUE
+assertEquals("HEY", "HEY"); // TRUE
+```
+### assertNotEquals(expectedValue, realValue)
+We check if both values are distinct from each other. (TRUE IF THEY ARE NOT EQUAL | FALSE IF THEY ARE EQUAL)
+```java title="assertNotEquals()"
+assertNotEquals(5, 3 + 3); // TRUE 
+assertNotEquals("HEY", "BYE"); // TRUE
+```
+### assertTrue(condition)
+Checks if the condition is true.
+```java cpp title:assertTrue
+assertTrue(5 > 3); // TRUE
+assertTrue(number % 2 == 0); // TRUE IF number is even
+```
+### assertFalse(condition)
+Checks if the condition is false.
+```java title="assertFalse()"
+assertFalse(5 < 3); // TRUE (Condition is false)
+assertFalse(number % 2 == 0); // TRUE IF number is odd (Condition is false)
+```
+### assertNull(value)
+Checks if the value is null.
+```java title="assertNull()"
+assertNull(value); // True if null
+```
+### assertNotNull(value)
+Checks if the value IS NOT null.
+```java title="assertNotNull()"
+assertNull(value); // TRUE IF NOT NULL
+```
+### assertThrows(Exception.class, executable)
+Checks if an exception is thrown
+```java title="assertThrows"
+assertThrows(InputMismatchException.class, () -> {     Scanner scanner = new Scanner("abc"); 
+scanner.nextInt();
+```
+
+## Related Topics
+- [[testing|Testing strategies]]
+- [[whiteBoxTesting|White box testing]]
+- [[methods|Testing methods]]
+---
+tags:
+  - java
+  - basics
+  - codeStructures
+cssclasses:
+  - centerImages
+  - " roundedImages"
+  - " centerTitles"
+---
+# Methods :DeJavaOriginal: :LiFunctionSquare:
+
+[[javi's/developer/concepts/functions|Functions]] in Java are called methods
+
+```java title="methodSytntax"
+public type name([parameters]){ 
+	instructions;
+	[return]; // States the result that has to be delivered from this method
+}
+```
+
+## Method types (Most common ones, syntax is similar between them)
+###  int
+Must return an int value
+```java title="intMethod"
+public int add([int a, int b}){
+	int output = 0;
+	output = a+b;
+	return output; 
+}
+```
+### float
+Returns a float value
+```Java title=floatMethod"
+public float divide([float a, float b]){
+    float output = 0.0f;
+    output = a / b;
+    return output;
+}
+```
+
+### double
+Returns a double value
+```java title="doubleMethod"
+public double round([double number]){
+    double output = 0.0;
+    output = Math.round(number * 100.0) / 100.0;
+    return output;
+}
+```
+### String
+Returns a String .
+```java title="stringMethod"
+public String concat([String a, String b]){
+    String output = "";
+    output = a + b;
+    return output;
+}
+```
+
+### void
+No return
+```java title="voidMethod"
+public void print([String message]){
+    System.out.println(message);
+    // No return
+}
+```
+
+### Array[] (int example)
+Returns an array
+```java title="arrayMethod"
+public int[] createArray([int size]){
+    int[] output = new int[size];
+    return output;
+}
+```
+## Related Topics
+- [[codeStructure|Java code structure]]
+- [[constructors|Constructors]]
+- [[inheritance#Overload|Method overload]]
+- [[accessModifiers|Java acces modifiers]]---
+tags:
+  - java
+  - oop
+  - advanced
+cssclasses:
+  - centerImages
+  - " roundedImages"
+  - " centerTitles"
+---
+# Introduction to Objects :DeJavaOriginal: :LiCuboid: 
+
+## Classes
+In Java, source code is divided into classes, each class has its specific methods and attributes, as well as its constructor or constructors.
+```java cpp title:Example_class
+public class Animal {
+    protected String nombre;
+    Animal(String nombre) {
+        this.nombre = nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+}
+```
+## Objects
+An object in Java is an instance of a class, with its attributes (each with its type) and methods defined in the class. Objects are created through constructors.
+> [!Tip] Tip
+> We can imagine a class is like a cookie mold, and an object is each of the cookies we can form with that mold, with almost identical characteristics, but they are different cookies.
+
+---
+
+### Example of an object (Creation and invocation)
+
+## Constructor
+```java cpp title:Example_object_Constructor
+class Persona {
+    public void saludo() { 
+        System.out.println("Hola " + nombre);
+    }
+    Persona(String nombre) {
+        // Constructor that indicates you only need a String nombre to create a Persona object
+    }
+};
+```
+
+```java cpp title:Example_object_Creation_and_invocation
+Persona p = new Persona("Ana");
+Ana.saludo(); // Will print Hello Ana
+```
+---
+tags:
+  - java
+  - oop
+  - advanced
+cssclasses:
+  - centerImages
+  - " roundedImages"
+  - " centerTitles"
+---
+#  Polymorphism :DeJavaOriginal:
+
+Polymorphism allows that objects from different classes use the same methods in different ways.
+## Types
+### Overload (Compile-time)
+> [!info] Overload (Compile-time)
+> Methods with the same name but different parameters inside the same class, Java chooses between methods based on the way we invoke them.
+> 
+> Similar to the [[constructors#overload|Constructors overload]]
+
+```java title="overloadPolymorphism"
+public class Animal {
+    (attributes);
+    public void makeNoise(){ // default method
+	    System.out.println("GRRR");
+    }
+    
+    public void makeNoise(Dog dog){ // method with Dog as an argument
+	    System.out.println("Woof");
+    }
+}
+```
+### Overwrite (Runtime)
+
+> [!info] Overwrite (Runtime)
+> Subclass rewrites method from Superclass ([[inheritance#dev_java_original Inheritance - Java|Inheritance]]) with `@Override` annotation.
+> 
+> The specific method is executed based on the object that invokes it
+> 
+> In the example below if any animal uses the `super.makeNoise()` will print `GRRR` in console, but if a Dog object uses the method `makeNoise()`  the print in the console would be `WOOF` 
+
+```java title="overwritePolymorphism"
+public class Animal {
+    (attributes);
+    public void makeNoise(){ // default
+	    System.out.println("GRRR");
+    }
+}
+public class Dog extends Animal{
+	@Override   // Reserved word for overwrite
+    public void makeNoise(){ 
+	    System.out.println("WOOF");
+    }
+}
+```
+
+![[polymorphism.png]]
+---
+cssclasses:
+  - centerImages
+  - " roundedImages"
+  - " centerTitles"
+---
+# Processbuilder
+
+> [! summary] ProcessBuilder
+> Serves to launch processes from java, has its own methods, consult them in the link below
+> https://docs.oracle.com/javase/8/docs/api/java/lang/ProcessBuilder.html
+# Example of code with processbuilder (Sequential)
+
+```java title="Sequential ProcessBuilder"
+package structuredSequentialLaunching;
+	import java.io.IOException;
+	import java.util.InputMismatchException;
+	import java.util.Scanner;
+
+public class main {
+	public static void launchProcess(int num, String path){
+	ProcessBuilder builder = new ProcessBuilder(path);
+	
+	for (int i = 0; i < num; i++) {
+		try {
+			builder.start();
+			System.out.println("Process Output " + (i+1) + " = [Correct] ");
+		} catch (IOException e) {
+			System.out.println("Error while launching the process");
+		}
+	}
+}
+	public static void main(String[] args) {
+		System.out.println("Start");
+		Scanner input = new Scanner (System.in);
+		int executions = 0;
+		String path = "C:\\Program Files\\Oracle\\VirtualBox\\VirtualBox.exe";
+		System.out.println("Please, state the numer of times you want to execute this process");
+		
+		do {
+			try {
+				executions = input.nextInt();
+			} catch (InputMismatchException ex) {
+				System.out.println("An integer number was expected");
+				input.next();
+			}
+		} while (executions < 1);
+		launchProcess(executions, path);
+		System.out.println("Bye");
+		input.close();
+		}
+}
+```
+
+# Example code with process builder (Concurrent)
+```java title="Clase launchProcess"
+package lanzamientoPOOConcurrente;
+
+import java.io.IOException;
+
+public class launchProcess {
+    public static int processCounter = 0;
+    ProcessBuilder process;
+    public String path;
+    public int number;
+    
+    launchProcess(String path, int number){
+        this.path = path;
+        this.number = number;
+        processCounter++;
+    }
+    
+    public void execute(int number){
+        System.out.println("Executing process number " + number);
+        process = new ProcessBuilder(this.path);
+        try {
+            process.start();
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("Error with the process" + number);
+        }
+    }
+}
+```
+
+```java title="Clase Principal"
+package lanzamientoPOOConcurrente;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class main {
+final static String path = "\"C:\\Program Files\\Oracle\\VirtualBox\\VirtualBox.exe\"";
+final static int 0 = 0;
+public static void main(String[] args) {
+    System.out.println("Start");
+		Scanner input = new Scanner (System.in);
+        int number = 0;
+        ArrayList<launchProcess> processList = new ArrayList<launchProcess>();
+		System.out.println("Please, state the numer of times you want to execute this process");
+		number = input.nextInt();
+        for(int i = 0; i <number; i++){
+            launchProcess process = new launchProcess(path, i+1);
+            processList.add(process);  
+        }
+
+        for (launchProcess process : processList) {
+            process.execute(process.number);
+        }
+        input.close();  
+}
+}
+```
+---
+tags:
+  - java
+cssclasses:
+  - centerImages
+  - " roundedImages"
+  - " centerTitles"
+---
+
+# StringBuilder :DeJavaOriginal: :LiTextCursor: :LiConstruction:
+
+
+It is a mutable class that allows to create and manipulate character sequences efficiently
+> [! info] Methods
+> Available here https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html
+
+```java title="StringBuilder "
+StringBuilder sb = new StringBuilder ("Hello"); // object with hi written
+sb.append ("World:"); // Add World:) TO THE FINAL OF THE STRING (appendix)
+sb.insert (4, ","); // It is inserted in position 4 a, "(insert)
+sb.delete (10,12); // ELIMINATE IN THE RANK OF POSITION 10-12 (delete)
+System.out.println (sb.toString ()); // prints the object as a string
+```
+
+## Related Topics
+- [[dataTypes|String vs primitive types]]
+- [[wrappers|Wrapper classes]]
+- [[constants|String constants]]
+---
+tags:
+  - java
+  - basics
+  - codeStructures
+cssclasses:
+  - centerImages
+  - " roundedImages"
+  - " centerTitles"
+---
+
+# Exception’s Control | try-catch blocks :DeJavaOriginal:
+
+## See Also
+- [[cleanCoding|Best practices]] — exception handling guidelines
+- [[codeStructure|Java code structure]]
+- [[algorithms__datastructures|Algorithms and error handling]]
+## :DeJavaOriginal: Try - catch
+When an exception (error) could be thrown the instruction that may cause that exception has to be enclosed in a `try` statement, followed by a `catch` statement specifying the exception that you are intending to control
+
+```java title="try-catch"
+try  {
+	Scanner input = new Scanner (System.in)
+    int value = input.nextInt();
+    input.close();
+} catch (InputMismatchException ex) {
+    System.err.println("Error reading int value");
+}
+```
+
+## :DeJavaOriginal: try-with_Resources
+
+Try-with_Resources blocks have the advantage of closing immediately the resources opened in the block.
+
+```java title="Try-with_Resources"
+try(Scanner input = new Scanner (System.in)){
+	int value = Scanner.nextInt();
+	System.out.println(value);
+}catch(InputMismatchException ex){
+	System.err.println("Error reading input");
+}
+```
+
+## Try-catch-finally
+Try-catch-Finally blocks ensure that the instructions in the `finally` statement are executed whether is an exception or not. 
+
+```java title="Try-catch-finally"
+public void divide(int a, int b) {
+    try {
+        int result = a / b;                          
+        System.out.println("Result: " + result);
+    } catch (ArithmeticException ex) {
+        System.err.println("Error: division by zero");
+    } finally {
+        System.out.println("Operation attempted");
+    }
+}
+```
+
+
+
+---
+tags:
+  - java
+  - advanced
+cssclasses:
+  - centerImages
+  - " roundedImages"
+  - " centerTitles"
+---
+
+# Wrappers :DeJavaOriginal:
+
+Object counterparts of primitive data types (such as `int`, `double`, and `boolean`), allowing these values to be used wherever objects are required, such as in collections, generics, and many APIs.
+ 
+![[dataTypes]]
+
+> [!danger] Important
+> Wrapper classes are **immutable**: once a wrapper object is created, its internal value cannot be changed; operations that seem to modify it actually create a new object.
+
+# Methods
+
+> [!tip] Available Methods
+> Inherited from Object: https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
+> Inherited from Number: https://docs.oracle.com/javase/8/docs/api/java/lang/Number.html
+
+```java title="Common methods (Numeric types)"
+valueOf(type) / valueOf(String) // → Returns a wrapper  (e.g. Integer, Double)
+parse[Type](String) //→ Returns a primitive value(e.g. int) (can throw NumberFormatException)
+```
+
+# [[dataTypes|Data types]] equivalents
+
+<mark style="background: #FF5582A6;">THE FOLLOWING IS NOT CODE, JUST A VISUAL WAY TO SEE THE CORRELATION</mark>
+
+```java title="equivalents"
+Integer = int;
+Boolean = boolean;
+Byte = byte;
+Short = short;
+Float = float;
+Character = char;
+Long = long;
+```
+
+
+## Related Topics
+- [[dataTypes|Java data types]]
+- [[objects| Java objects]]
+- [[casting|Type casting]]
+- [[dinamicArrays|ArrayLists]] ---
+tags:
+  - java
+  - xml
+  - dataStructures
+  - advanced
+cssclasses:
+  - centerImages
+  - " roundedImages"
+  - " centerTitles"
+---
+# DOM
+
+
+
+
+
+# SAX
+
+
+
+
+# JAXB
+`JAXB` needs a valid xml schema (also called  `xsd` )
+
+It processes that schema and instantly generates an object of each element of the XML, bounding it for the class regardind that specific element
+
+for example
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="book">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="title" type="xs:string"/>
+        <xs:element name="author" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="published_in" type="xs:gYear" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+```
+
+
+
+
+# XPATH
+---
+tags:
+  - java
+  - snippets
+cssclasses:
+  - centerImages
+  - " roundedImages"
+  - " centerTitles"
+---
+
+# Snippets java :DeJavaOriginal: :LiLayoutTemplate:
+## setCharset()
+### <mark style="background: #FF5582A6;">Includes Characters utf-8 in System.out</mark>
+
+```java title="setCharset()"
+private static void setCharset() {
+	try {
+		System.setOut(new PrintStream(System.out, true, StandardCharsets.UTF_8.name()));
+	} catch (UnsupportedEncodingException e) {
+		e.printStackTrace();
+	}
+}
+```
+
+## Input validation
+
+```java title="int_validation" group="validation"
+public static int readInt(Scanner input) {
+	int output;
+	boolean exit = false;
+	output = INI_INT;
+				
+	do {
+		try {
+			output = input.nextInt();
+			exit = true;
+		} catch (InputMismatchException ex) {
+			System.out.println("Input not valid, an integer number was expected");
+			input.next();
+		}
+	} while (!exit);
+	return output;
+}
+```
+```java title="validate float" group="validation"
+public static float readFloat(Scanner input) {
+	float output;
+	boolean exit = false;
+	output = INI_FLOAT;
+	do {
+		try {
+			output = entrada.nextFloat();
+			exit = true;
+		} catch (InputMismatchException ex) {
+			System.out.println("Input not valid, a float number was expected");
+			input.next();
+		}
+	} while (!exit);
+	return output;
+}
+```
+
+## generateNumber()
+
+```java title="generarNum()" group=genNum
+public static int generateNumber(int max, int min) {
+	int output;
+	output = (int) (Math.random() * (max - min + 1) + min);
+	return output;
+}
+```
+```java title="Float generarNum()" group=genNum
+public static float generateNumber(int max, int min) {
+	float output;
+	output = (int) (Math.random() * (max - min + 1) + min);
+	return output;
+}
+```

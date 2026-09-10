@@ -12,7 +12,7 @@ cssclasses:
 
 Object counterparts of primitive data types (such as `int`, `double`, and `boolean`), allowing these values to be used wherever objects are required, such as in collections, generics, and many APIs.
  
-![[primitiveTypes]]
+![[dataTypes]]
 
 > [!danger] Important
 > Wrapper classes are **immutable**: once a wrapper object is created, its internal value cannot be changed; operations that seem to modify it actually create a new object.
@@ -28,7 +28,7 @@ valueOf(type) / valueOf(String) // → Returns a wrapper  (e.g. Integer, Double)
 parse[Type](String) //→ Returns a primitive value(e.g. int) (can throw NumberFormatException)
 ```
 
-# [[primitiveTypes|Data types]] equivalents
+# [[dataTypes|Data types]] equivalents
 
 <mark style="background: #FF5582A6;">THE FOLLOWING IS NOT CODE, JUST A VISUAL WAY TO SEE THE CORRELATION</mark>
 
@@ -44,7 +44,7 @@ Long = long;
 
 
 ## Related Topics
-- [[primitiveTypes|Java data types]]
+- [[dataTypes|Java data types]]
 - [[objects| Java objects]]
 - [[casting|Type casting]]
 - [[dinamicArrays|ArrayLists]] 

@@ -11,11 +11,6 @@ cssclasses:
 > [!note] Definition
 > An algorithm is a specified step by step procedure that aims to resolve a specific problem.
 
-## Related Topics
-- [[algorithms__datastructures|Algorithms & Data Structures index]]
-- [[arrays|Arrays]] — common data structure
-- [[javi's/developer/03 - Notes/debugging|Debugging algorithms]]
-
 An algorithm can be represented in 2 different models, pseudo-code and flow-chart
 
 

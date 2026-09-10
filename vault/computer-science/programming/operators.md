@@ -101,4 +101,4 @@ n--: //n=4
   ```
 ## Related Topics
 - [[selectionStructures|Selection structures (if, switch)]]
-- [[primitiveTypes|Java data types]]
+- [[dataTypes|Java data types]]
