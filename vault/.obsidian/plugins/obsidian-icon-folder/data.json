@@ -29,7 +29,7 @@
         "useFilePath": true
       },
       {
-        "rule": "computer-science/computer-architecture",
+        "rule": "computer-science/architecture",
         "icon": "LiCpu",
         "for": "everything",
         "useFilePath": true
@@ -59,12 +59,6 @@
         "useFilePath": true
       },
       {
-        "rule": "computer-science/error-handling",
-        "icon": "LiBug",
-        "for": "everything",
-        "useFilePath": true
-      },
-      {
         "rule": "computer-science/networking",
         "icon": "LiNetwork",
         "for": "everything",
@@ -77,374 +71,332 @@
         "useFilePath": true
       },
       {
-        "rule": "computer-science/programming",
-        "icon": "LiCode2",
-        "for": "everything",
-        "useFilePath": true
-      },
-      {
         "rule": "computer-science/theory",
         "icon": "LiBookOpen",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "^devops$",
-        "icon": "LiWorkflow",
+        "rule": "^development$",
+        "icon": "LiCode2",
         "for": "folders",
         "useFilePath": true
       },
       {
-        "rule": "devops/aws",
-        "icon": "DeAmazonwebservicesOriginalWordmark",
-        "for": "everything",
-        "useFilePath": true
-      },
-      {
-        "rule": "devops/ci-cd",
-        "icon": "DeGithubactionsOriginal",
-        "for": "everything",
-        "useFilePath": true
-      },
-      {
-        "rule": "devops/cloudflare",
-        "icon": "DeCloudflareOriginal",
-        "for": "everything",
-        "useFilePath": true
-      },
-      {
-        "rule": "devops/docker",
-        "icon": "DeDockerOriginal",
-        "for": "everything",
-        "useFilePath": true
-      },
-      {
-        "rule": "devops/git",
-        "icon": "DeGitOriginal",
-        "for": "everything",
-        "useFilePath": true
-      },
-      {
-        "rule": "devops/github",
-        "icon": "DeGithubOriginal",
-        "for": "everything",
-        "useFilePath": true
-      },
-      {
-        "rule": "devops/kubernetes",
-        "icon": "DeKubernetesOriginal",
-        "for": "everything",
-        "useFilePath": true
-      },
-      {
-        "rule": "devops/linux",
-        "icon": "DeLinuxOriginal",
-        "for": "everything",
-        "useFilePath": true
-      },
-      {
-        "rule": "devops/monitoring",
-        "icon": "DeGrafanaOriginal",
-        "for": "everything",
-        "useFilePath": true
-      },
-      {
-        "rule": "devops/networking",
-        "icon": "LiNetwork",
-        "for": "everything",
-        "useFilePath": true
-      },
-      {
-        "rule": "devops/nginx",
-        "icon": "DeNginxOriginal",
-        "for": "everything",
-        "useFilePath": true
-      },
-      {
-        "rule": "devops/terraform",
-        "icon": "DeTerraformOriginal",
-        "for": "everything",
-        "useFilePath": true
-      },
-      {
-        "rule": "devops/virtualization",
-        "icon": "LiMonitor",
-        "for": "everything",
-        "useFilePath": true
-      },
-      {
-        "rule": "^frameworks$",
-        "icon": "LiBoxes",
-        "for": "folders",
-        "useFilePath": true
-      },
-      {
-        "rule": "frameworks/express",
-        "icon": "DeExpressOriginal",
-        "for": "everything",
-        "useFilePath": true
-      },
-      {
-        "rule": "frameworks/nextjs",
-        "icon": "DeNextjsOriginal",
-        "for": "everything",
-        "useFilePath": true
-      },
-      {
-        "rule": "frameworks/react",
-        "icon": "DeReactOriginal",
-        "for": "everything",
-        "useFilePath": true
-      },
-      {
-        "rule": "frameworks/spring",
-        "icon": "DeSpringOriginal",
-        "for": "everything",
-        "useFilePath": true
-      },
-      {
-        "rule": "^languages$",
+        "rule": "development/languages",
         "icon": "DeStackoverflowOriginal",
         "for": "folders",
         "useFilePath": true
       },
       {
-        "rule": "languages/bash",
+        "rule": "development/languages/bash",
         "icon": "SiGnubash",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "languages/cpp",
+        "rule": "development/languages/cpp",
         "icon": "DeCplusplusOriginal",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "languages/c",
+        "rule": "development/languages/c",
         "icon": "DeCOriginal",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "languages/go",
+        "rule": "development/languages/go",
         "icon": "DeGoOriginal",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "languages/javascript",
+        "rule": "development/languages/javascript",
         "icon": "DeJavascriptOriginal",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "languages/java",
+        "rule": "development/languages/java",
         "icon": "DeJavaOriginal",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "languages/postgresSQL",
+        "rule": "development/languages/postgresSQL",
         "icon": "DePostgresqlOriginal",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "languages/python",
+        "rule": "development/languages/python",
         "icon": "DePythonOriginal",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "languages/python/exercises",
+        "rule": "development/languages/python/exercises",
         "icon": "LiNotebookPen",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "languages/python/pyspark",
+        "rule": "development/languages/python/pyspark",
         "icon": "DeApachesparkOriginal",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "languages/rust",
+        "rule": "development/languages/rust",
         "icon": "DeRustOriginal",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "languages/sql",
+        "rule": "development/languages/sql",
         "icon": "DeMysqlOriginal",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "languages/sql/DDL",
+        "rule": "development/languages/sql/DDL",
         "icon": "LiTableProperties",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "languages/sql/DML",
+        "rule": "development/languages/sql/DML",
         "icon": "LiTable2",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "languages/TSQL",
+        "rule": "development/languages/TSQL",
         "icon": "DeMicrosoftsqlserverOriginal",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "languages/typescript",
+        "rule": "development/languages/typescript",
         "icon": "DeTypescriptOriginal",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "^projects$",
-        "icon": "LiFolderGit2",
+        "rule": "development/frameworks",
+        "icon": "LiBoxes",
         "for": "folders",
         "useFilePath": true
       },
       {
-        "rule": "projects/42",
-        "icon": "De42",
+        "rule": "development/frameworks/express",
+        "icon": "DeExpressOriginal",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "projects/Asgard",
-        "icon": "LiSwords",
+        "rule": "development/frameworks/nextjs",
+        "icon": "DeNextjsOriginal",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "projects/MVP",
-        "icon": "LiRocket",
+        "rule": "development/frameworks/react",
+        "icon": "DeReactOriginal",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "projects/Reloj",
-        "icon": "LiClock3",
+        "rule": "development/frameworks/spring",
+        "icon": "DeSpringOriginal",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "^recipes$",
-        "icon": "LiBookMarked",
-        "for": "folders",
-        "useFilePath": true
-      },
-      {
-        "rule": "recipes/databases",
-        "icon": "LiDatabase",
+        "rule": "development/programming",
+        "icon": "LiCode2",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "recipes/deployment",
-        "icon": "LiRocket",
-        "for": "everything",
-        "useFilePath": true
-      },
-      {
-        "rule": "recipes/docker",
-        "icon": "DeDockerOriginal",
-        "for": "everything",
-        "useFilePath": true
-      },
-      {
-        "rule": "recipes/git",
-        "icon": "DeGitOriginal",
-        "for": "everything",
-        "useFilePath": true
-      },
-      {
-        "rule": "recipes/linux",
-        "icon": "DeLinuxOriginal",
-        "for": "everything",
-        "useFilePath": true
-      },
-      {
-        "rule": "recipes/networking",
-        "icon": "LiNetwork",
-        "for": "everything",
-        "useFilePath": true
-      },
-      {
-        "rule": "^software-engineering$",
-        "icon": "LiBlocks",
-        "for": "folders",
-        "useFilePath": true
-      },
-      {
-        "rule": "software-engineering/architecture",
-        "icon": "SiBlueprint",
-        "for": "everything",
-        "useFilePath": true
-      },
-      {
-        "rule": "software-engineering/clean-code",
-        "icon": "LiSparkles",
-        "for": "everything",
-        "useFilePath": true
-      },
-      {
-        "rule": "software-engineering/debugging",
+        "rule": "development/programming/error-handling",
         "icon": "LiBug",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "software-engineering/design-patterns",
+        "rule": "development/software-engineering",
+        "icon": "LiBlocks",
+        "for": "folders",
+        "useFilePath": true
+      },
+      {
+        "rule": "development/software-engineering/architecture",
+        "icon": "SiBlueprint",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "development/software-engineering/clean-code",
+        "icon": "LiSparkles",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "development/software-engineering/debugging",
+        "icon": "LiBug",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "development/software-engineering/design-patterns",
         "icon": "LiRuler",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "software-engineering/documentation",
+        "rule": "development/software-engineering/documentation",
         "icon": "LiFileText",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "software-engineering/paradigms",
+        "rule": "development/software-engineering/paradigms",
         "icon": "LiWaypoints",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "software-engineering/project-management",
+        "rule": "development/software-engineering/project-management",
         "icon": "DeJiraOriginal",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "software-engineering/requirements",
+        "rule": "development/software-engineering/requirements",
         "icon": "LiClipboardCheck",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "software-engineering/solid",
+        "rule": "development/software-engineering/solid",
         "icon": "LiBuilding2",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "software-engineering/testing",
+        "rule": "development/software-engineering/testing",
         "icon": "DeJunitOriginal",
         "for": "everything",
         "useFilePath": true
       },
       {
-        "rule": "software-engineering/versioning",
+        "rule": "development/software-engineering/versioning",
         "icon": "DeGitOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "development/version-control",
+        "icon": "LiGitBranch",
+        "for": "folders",
+        "useFilePath": true
+      },
+      {
+        "rule": "development/version-control/git",
+        "icon": "DeGitOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "development/version-control/github",
+        "icon": "DeGithubOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "^infrastructure$",
+        "icon": "LiServer",
+        "for": "folders",
+        "useFilePath": true
+      },
+      {
+        "rule": "infrastructure/aws",
+        "icon": "DeAmazonwebservicesOriginalWordmark",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "infrastructure/aws/cli",
+        "icon": "DeAmazonwebservicesPlainWordmark",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "infrastructure/ci-cd",
+        "icon": "DeGithubactionsOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "infrastructure/cloudflare",
+        "icon": "DeCloudflareOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "infrastructure/docker",
+        "icon": "DeDockerOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "infrastructure/kubernetes",
+        "icon": "DeKubernetesOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "infrastructure/linux",
+        "icon": "DeLinuxOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "infrastructure/monitoring",
+        "icon": "DeGrafanaOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "infrastructure/networking",
+        "icon": "LiNetwork",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "infrastructure/nginx",
+        "icon": "DeNginxOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "infrastructure/terraform",
+        "icon": "DeTerraformOriginal",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "infrastructure/virtualization",
+        "icon": "LiMonitor",
+        "for": "everything",
+        "useFilePath": true
+      },
+      {
+        "rule": "infrastructure/deployment",
+        "icon": "LiRocket",
         "for": "everything",
         "useFilePath": true
       },
@@ -452,12 +404,6 @@
         "rule": "^tools$",
         "icon": "LiWrench",
         "for": "folders",
-        "useFilePath": true
-      },
-      {
-        "rule": "tools/aws-cli",
-        "icon": "DeAmazonwebservicesPlainWordmark",
-        "for": "everything",
         "useFilePath": true
       },
       {
